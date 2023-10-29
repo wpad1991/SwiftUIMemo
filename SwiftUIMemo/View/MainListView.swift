@@ -21,6 +21,7 @@ struct MainListView: View {
                 } label: {
                     MemoCell(memo: memo)
                 }
+
             }
             .listStyle(.plain)
             .navigationTitle("내 메모")
@@ -36,7 +37,7 @@ struct MainListView: View {
                 ComposeView()
             }
         }
-        
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
